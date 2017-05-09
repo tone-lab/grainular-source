@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+
+<!--<span class="credits">credits: made by me@daz.is using-->
+    <!--<a href="https://tonejs.github.io/">tonejs</a> and-->
+    <!--free sounds from-->
+    <!--<a href="http://www.freesound.org/people/felix.blume/">felix blume</a>-->
+<!--</span>-->
+
+<div class="wave">
+    <svg #wave [attr.viewBox]="'0 0 ' + playerSize + ' 512'" (click)="skip($event)">
+        <path [attr.d]="path" fill="none" stroke="khaki"></path>
+    </svg>
+</div>
